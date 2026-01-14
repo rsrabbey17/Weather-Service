@@ -1,0 +1,10 @@
+# Development profile configuration
+# API key should be set via environment variable or system property
+# Example: export WEATHER_API_KEY=your_api_key_here
+
+weather:
+  api:
+    key: ${WEATHER_API_KEY:your_api_key_here}
+    base-url: http://api.weatherapi.com/v1
+
+# For production, create application-prod.yml and set API key via environment variable
